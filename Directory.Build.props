@@ -36,7 +36,7 @@
 		<Using Include="JetBrains.Annotations" />
 	</ItemGroup>
 
-	<PropertyGroup Condition="'$(Configuration)' == 'Release' And $(MSBuildProjectName.EndsWith('.Tests')) == false">
+	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.Tests')) == false">
 		<GenerateSBOM>true</GenerateSBOM>
 	</PropertyGroup>
 

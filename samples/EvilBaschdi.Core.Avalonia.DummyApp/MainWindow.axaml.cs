@@ -21,8 +21,13 @@ public partial class MainWindow : FAAppWindow
 
     // ReSharper disable UnusedParameter.Local
     // ReSharper disable once UnusedMember.Local
-    private async void ShowMessage(object sender, RoutedEventArgs e)
+    private void ShowMessage(object sender, RoutedEventArgs e)
         // ReSharper restore UnusedParameter.Local
+    {
+        _ = RunDialogAsync(ShowMessageAsync, exception => MessageBoxResult.Text = exception.Message);
+    }
+
+    private async Task ShowMessageAsync()
     {
         var contentDialog = new FAContentDialog
                             {
@@ -37,8 +42,13 @@ public partial class MainWindow : FAAppWindow
 
     // ReSharper disable UnusedParameter.Local
     // ReSharper disable once UnusedMember.Local
-    private async void ShowWarning(object sender, RoutedEventArgs e)
+    private void ShowWarning(object sender, RoutedEventArgs e)
         // ReSharper restore UnusedParameter.Local
+    {
+        _ = RunDialogAsync(ShowWarningAsync, exception => MessageBoxResult.Text = exception.Message);
+    }
+
+    private async Task ShowWarningAsync()
     {
         var taskDialog = new FATaskDialog
                          {
@@ -57,8 +67,13 @@ public partial class MainWindow : FAAppWindow
 
     // ReSharper disable UnusedParameter.Local
     // ReSharper disable once UnusedMember.Local
-    private async void ShowError(object sender, RoutedEventArgs e)
+    private void ShowError(object sender, RoutedEventArgs e)
         // ReSharper restore UnusedParameter.Local
+    {
+        _ = RunDialogAsync(ShowErrorAsync, exception => MessageBoxResult.Text = exception.Message);
+    }
+
+    private async Task ShowErrorAsync()
     {
         var taskDialog = new FATaskDialog
                          {
@@ -77,8 +92,13 @@ public partial class MainWindow : FAAppWindow
 
     // ReSharper disable UnusedParameter.Local
     // ReSharper disable once UnusedMember.Local
-    private async void ShowDialogBox(object sender, RoutedEventArgs e)
+    private void ShowDialogBox(object sender, RoutedEventArgs e)
         // ReSharper restore UnusedParameter.Local
+    {
+        _ = RunDialogAsync(ShowDialogBoxAsync, exception => DialogBoxResult.Text = exception.Message);
+    }
+
+    private async Task ShowDialogBoxAsync()
     {
         var dialog = new FAContentDialog
                      {
@@ -98,6 +118,18 @@ public partial class MainWindow : FAAppWindow
         if (result == FAContentDialogResult.Primary && !string.IsNullOrWhiteSpace(input.ResultText))
         {
             DialogBoxResult.Text = input.ResultText;
+        }
+    }
+
+    private async Task RunDialogAsync(Func<Task> showDialogAsync, Action<Exception> showError)
+    {
+        try
+        {
+            await showDialogAsync();
+        }
+        catch (Exception exception)
+        {
+            showError(exception);
         }
     }
 }
