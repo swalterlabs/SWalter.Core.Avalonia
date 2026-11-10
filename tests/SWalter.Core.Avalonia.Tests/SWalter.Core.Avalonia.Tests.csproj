@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\SWalter.Testing.Avalonia\SWalter.Testing.Avalonia.csproj" />
+  </ItemGroup>
+</Project>

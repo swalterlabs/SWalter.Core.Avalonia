@@ -4,8 +4,8 @@
 		<AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
 		<Authors>Sebastian Walter</Authors>
 		<BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-		<Company>evilbaschdi (Sebastian Walter)</Company>
-		<Copyright>Copyright © $([System.DateTime]::UtcNow.ToString(yyyy)) evilbaschdi</Copyright>
+		<Company>SWalter Labs</Company>
+		<Copyright>Copyright © $([System.DateTime]::UtcNow.ToString(yyyy)) SWalter Labs</Copyright>
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>full</DebugType>
 		<Description>Core Avalonia package</Description>
@@ -14,25 +14,27 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>preview</LangVersion>
+		<PackageId>$(MSBuildProjectName)</PackageId>
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageIconUrl><![CDATA[https://avatars1.githubusercontent.com/u/1897807?s=120&v=4]]></PackageIconUrl>
-		<PackageProjectUrl>https://github.com/evilbaschdi/EvilBaschdi.Core.Avalonia</PackageProjectUrl>
+		<PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/323152839?s=180&v=4]]></PackageIconUrl>
+		<PackageProjectUrl>https://github.com/swalterlabs/SWalter.Core.Avalonia</PackageProjectUrl>
 		<PackageTags>Avalonia</PackageTags>
 		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<RepositoryUrl>https://github.com/evilbaschdi/EvilBaschdi.Core.Avalonia</RepositoryUrl>
+		<RepositoryUrl>https://github.com/swalterlabs/SWalter.Core.Avalonia</RepositoryUrl>
 		<IncludeSymbols>True</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<TargetFramework>net10.0</TargetFramework>
+		<!--<TargetFramework>net12.0</TargetFramework>-->
+		<TargetFrameworks>net11.0;net10.0</TargetFrameworks>
 		<VersionPrefix>$([System.DateTime]::UtcNow.ToString(yyyy.M.d.H))</VersionPrefix>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="EvilBaschdi.Core" />
+		<PackageReference Include="SWalter.Core" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Using Include="EvilBaschdi.Core" />
+		<Using Include="SWalter.Core" />
 		<Using Include="JetBrains.Annotations" />
 	</ItemGroup>
 
@@ -63,7 +65,7 @@
 				<PackageReference Include="Avalonia.Themes.Fluent" />
 				<PackageReference Include="Avalonia.Themes.Simple" />
 				<PackageReference Include="FluentAvaloniaUI" />
-				<PackageReference Include="EvilBaschdi.Core.DependencyInjection" />
+				<PackageReference Include="SWalter.Core.DependencyInjection" />
 				<PackageReference Include="ReactiveUI" />
 				<PackageReference Include="ReactiveUI.Avalonia" />
 				<PackageReference Include="ReactiveUI.Avalonia.Microsoft.Extensions.DependencyInjection" />
@@ -122,16 +124,16 @@
 			<ItemGroup>
 				<Using Include="AutoFixture.Idioms" />
 				<Using Include="AutoFixture.Xunit3" />
-				<Using Include="EvilBaschdi.Testing" />
+				<Using Include="SWalter.Testing" />
 				<Using Include="AwesomeAssertions" />
-				<Using Include="EvilBaschdi.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
+				<Using Include="SWalter.Testing.Assertions.Microsoft.Extensions.DependencyInjection" />
 				<Using Include="NSubstitute" />
 				<Using Include="NSubstitute.ReturnsExtensions" />
 				<Using Include="Xunit" />
 			</ItemGroup>
 
 			<ItemGroup>
-				<PackageReference Include="EvilBaschdi.Testing" />
+				<PackageReference Include="SWalter.Testing" />
 				<PackageReference Include="xunit.v3" />
 				<PackageReference Include="Microsoft.NET.Test.Sdk" />
 				<PackageReference Include="coverlet.collector">
@@ -160,7 +162,7 @@
 
 	<!-- ReSharper disable once UnknownProperty -->
 	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Avalonia')) != 'true'">
-		<ProjectReference Include="..\..\src\EvilBaschdi.Core.Avalonia\EvilBaschdi.Core.Avalonia.csproj" />
+		<ProjectReference Include="..\..\src\SWalter.Core.Avalonia\SWalter.Core.Avalonia.csproj" />
 	</ItemGroup>
 
 </Project>

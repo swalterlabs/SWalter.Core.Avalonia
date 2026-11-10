@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="NuGet.config" />
+  </Folder>
+  <Folder Name="/samples/">
+    <Project Path="samples/SWalter.Core.Avalonia.DummyApp/SWalter.Core.Avalonia.DummyApp.csproj" />
+    <Project Path="samples/SWalter.Core.Avalonia.DummyAppMvvm/SWalter.Core.Avalonia.DummyAppMvvm.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/SWalter.Core.Avalonia/SWalter.Core.Avalonia.csproj" />
+    <Project Path="src/SWalter.Testing.Avalonia/SWalter.Testing.Avalonia.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SWalter.Core.Avalonia.Tests/SWalter.Core.Avalonia.Tests.csproj" />
+  </Folder>
+</Solution>
