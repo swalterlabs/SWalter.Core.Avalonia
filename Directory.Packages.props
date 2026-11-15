@@ -19,7 +19,7 @@
     <PackageVersion Include="SWalter.Core.DependencyInjection" Version="2026.11.10.18" />
     <PackageVersion Include="FluentAvaloniaUI" Version="3.1.0" />
     <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.13" />
-    <PackageVersion Include="ReactiveUI" Version="26.0.1" />
+    <PackageVersion Include="ReactiveUI" Version="27.0.0" />
     <PackageVersion Include="ReactiveUI.Avalonia" Version="12.1.6" />
     <PackageVersion Include="ReactiveUI.Avalonia.Microsoft.Extensions.DependencyInjection" Version="12.1.6" />
     <PackageVersion Include="TextMateSharp" Version="2.0.5" />
@@ -29,10 +29,10 @@
   <!-- #endregion Project Libs -->
   <!-- #region Unit Test Libs -->
   <ItemGroup>
-    <PackageVersion Include="SWalter.Testing" Version="2026.11.10.17" />
+    <PackageVersion Include="SWalter.Testing" Version="2026.11.11.18" />
     <PackageVersion Include="coverlet.collector" Version="10.1.0" />
     <PackageVersion Include="AwesomeAssertions.Analyzers" Version="9.0.8" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.12.0" />
     <PackageVersion Include="NSubstitute.Analyzers.CSharp" Version="1.0.17" />
     <PackageVersion Include="xunit.v3" Version="4.0.3" />
     <PackageVersion Include="xunit.analyzers" Version="2.3.0" />
