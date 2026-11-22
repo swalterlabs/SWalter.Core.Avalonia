@@ -26,7 +26,7 @@ public class LinuxThemeColorProvider : IThemeColorProvider
     // ------------------------------------------------------------
     private string DetectDesktopEnvironment()
     {
-        var de = Environment.GetEnvironmentVariable("XDG_CURRENT_DESKTOP")?.ToLower() ?? "";
+        var de = Environment.GetEnvironmentVariable("XDG_CURRENT_DESKTOP")?.ToLowerInvariant() ?? "";
 
         if (de.Contains("gnome"))
         {

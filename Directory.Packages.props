@@ -19,9 +19,9 @@
     <PackageVersion Include="SWalter.Core.DependencyInjection" Version="2026.11.10.18" />
     <PackageVersion Include="FluentAvaloniaUI" Version="3.1.0" />
     <PackageVersion Include="Microsoft.Sbom.Targets" Version="4.1.13" />
-    <PackageVersion Include="ReactiveUI" Version="27.0.1" />
-    <PackageVersion Include="ReactiveUI.Avalonia" Version="12.1.7" />
-    <PackageVersion Include="ReactiveUI.Avalonia.Microsoft.Extensions.DependencyInjection" Version="12.1.7" />
+    <PackageVersion Include="ReactiveUI" Version="28.0.0" />
+    <PackageVersion Include="ReactiveUI.Avalonia" Version="12.1.8" />
+    <PackageVersion Include="ReactiveUI.Avalonia.Microsoft.Extensions.DependencyInjection" Version="12.1.8" />
     <PackageVersion Include="TextMateSharp" Version="2.0.5" />
     <PackageVersion Include="TextMateSharp.Grammars" Version="2.0.5" />
     <PackageVersion Include="Tmds.DBus.Protocol" Version="0.95.2" />

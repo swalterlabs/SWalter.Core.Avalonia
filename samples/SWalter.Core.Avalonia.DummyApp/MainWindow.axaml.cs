@@ -1,8 +1,8 @@
 using System.Runtime.InteropServices;
 using Avalonia.Interactivity;
-using SWalter.Core.Avalonia.Controls;
 using FluentAvalonia.UI.Controls;
 using FluentAvalonia.UI.Windowing;
+using SWalter.Core.Avalonia.Controls;
 
 namespace SWalter.Core.Avalonia.DummyApp;
 
@@ -16,7 +16,8 @@ public partial class MainWindow : FAAppWindow
     {
         InitializeComponent();
 
-        ArchitectureInformation.Text = $"{RuntimeInformation.FrameworkDescription} ({RuntimeInformation.ProcessArchitecture} on {RuntimeInformation.OSArchitecture})".ToLower();
+        ArchitectureInformation.Text =
+            $"{RuntimeInformation.FrameworkDescription} ({RuntimeInformation.ProcessArchitecture} on {RuntimeInformation.OSArchitecture})".ToLowerInvariant();
     }
 
     // ReSharper disable UnusedParameter.Local
