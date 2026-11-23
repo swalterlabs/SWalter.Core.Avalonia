@@ -5,16 +5,16 @@
   </PropertyGroup>
   <!-- #region Project Libs -->
   <ItemGroup>
-    <PackageVersion Include="Avalonia" Version="12.1.6" />
+    <PackageVersion Include="Avalonia" Version="12.2.0" />
     <PackageVersion Include="Avalonia.AvaloniaEdit" Version="12.0.0" />
     <PackageVersion Include="AvaloniaEdit.TextMate" Version="12.0.0" />
     <PackageVersion Include="Avalonia.Controls.DataGrid" Version="12.1.2" />
-    <PackageVersion Include="Avalonia.Desktop" Version="12.1.6" />
+    <PackageVersion Include="Avalonia.Desktop" Version="12.2.0" />
     <PackageVersion Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3" />
-    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.1.6" />
-    <PackageVersion Include="Avalonia.Headless.XUnit" Version="12.1.6" />
-    <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.1.6" />
-    <PackageVersion Include="Avalonia.Themes.Simple" Version="12.1.6" />
+    <PackageVersion Include="Avalonia.Fonts.Inter" Version="12.2.0" />
+    <PackageVersion Include="Avalonia.Headless.XUnit" Version="12.2.0" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="12.2.0" />
+    <PackageVersion Include="Avalonia.Themes.Simple" Version="12.2.0" />
     <PackageVersion Include="SWalter.Core" Version="2026.11.10.18" />
     <PackageVersion Include="SWalter.Core.DependencyInjection" Version="2026.11.10.18" />
     <PackageVersion Include="FluentAvaloniaUI" Version="3.1.0" />
