@@ -19,32 +19,25 @@ Avalonia UI extensions, controls, and headless testing utilities for .NET applic
 
 ## 📦 Packages in this Repository
 
-| Package                                                    | Description                                                                    | Sources                                                                                                                                                                                                                                                                                                                           |
-| :--------------------------------------------------------- | :----------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [`SWalter.Core.Avalonia`](src/SWalter.Core.Avalonia)       | Avalonia UI extensions, FluentAvalonia themes, behaviors, and control helpers. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/SWalter.Core.Avalonia) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/SWalter.Core.Avalonia)       |
-| [`SWalter.Testing.Avalonia`](src/SWalter.Testing.Avalonia) | Headless testing utilities and helpers for Avalonia UI controls.               | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/SWalter.Testing.Avalonia) [![Codeberg](https://img.shields.io/badge/Codeberg-gray?style=flat-square&logo=codeberg)](https://codeberg.org/evilbaschdi/-/packages/nuget/SWalter.Testing.Avalonia) |
+| Package                                                    | Description                                                                    | Package Link                                                                                                                                                |
+| :--------------------------------------------------------- | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`SWalter.Core.Avalonia`](src/SWalter.Core.Avalonia)       | Avalonia UI extensions, FluentAvalonia themes, behaviors, and control helpers. | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/SWalter.Core.Avalonia)    |
+| [`SWalter.Testing.Avalonia`](src/SWalter.Testing.Avalonia) | Headless testing utilities and helpers for Avalonia UI controls.               | [![MyGet](https://img.shields.io/badge/MyGet-gray?style=flat-square&logo=myget)](https://myget.org/feed/swalterlabs/package/nuget/SWalter.Testing.Avalonia) |
 
 ---
 
 ## 🚀 Package Feeds
 
-All packages (Release and Preview builds) are published to **MyGet** and **Codeberg**. You only need to configure **one** of these feeds.
+All packages (Release and Preview builds) are published to **MyGet**.
 
-| Registry     | Feed URL                                                         |
-| :----------- | :--------------------------------------------------------------- |
-| **MyGet**    | `https://www.myget.org/F/swalterlabs/api/v3/index.json`          |
-| **Codeberg** | `https://codeberg.org/api/packages/evilbaschdi/nuget/index.json` |
+| Registry  | Feed URL                                                |
+| :-------- | :------------------------------------------------------ |
+| **MyGet** | `https://www.myget.org/F/swalterlabs/api/v3/index.json` |
 
 ### Add Feed via .NET CLI
 
-Choose either MyGet or Codeberg:
-
 ```bash
-# Option A: MyGet (recommended)
 dotnet nuget add source https://www.myget.org/F/swalterlabs/api/v3/index.json -n "SWalter Labs"
-
-# Option B: Codeberg
-dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/index.json -n "EvilBaschdi Codeberg"
 ```
 
 <details>
@@ -58,7 +51,6 @@ dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/inde
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />
     <!-- Choose one of the following feeds: -->
     <add key="SWalter Labs" value="https://www.myget.org/F/swalterlabs/api/v3/index.json" />
-    <!-- <add key="EvilBaschdi Codeberg" value="https://codeberg.org/api/packages/evilbaschdi/nuget/index.json" /> -->
   </packageSources>
 
   <packageSourceMapping>
@@ -68,9 +60,6 @@ dotnet nuget add source https://codeberg.org/api/packages/evilbaschdi/nuget/inde
     <packageSource key="SWalter Labs">
       <package pattern="SWalter.*" />
     </packageSource>
-    <!-- <packageSource key="EvilBaschdi Codeberg">
-      <package pattern="SWalter.*" />
-    </packageSource> -->
   </packageSourceMapping>
 </configuration>
 ```

@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build-and-publish:
-    uses: swalterlabs/EvilBaschdi.BuildTemplates/.github/workflows/build-n-pack-multi-stage.yml@main
+    uses: swalterlabs/SWalter.BuildTemplates/.github/workflows/build-n-pack-multi-stage.yml@main
     with:
       projects: '["SWalter.Core.Avalonia", "SWalter.Testing.Avalonia"]'
       framework: net10.0
@@ -26,4 +26,3 @@ jobs:
     secrets:
       AZURE_ARTIFACTS_PAT: ${{ secrets.AZURE_ARTIFACTS_PAT }}
       MYGET_API_KEY: ${{ secrets.MYGET_API_KEY }}
-      CODEBERG_API_KEY: ${{ secrets.CODEBERG_API_KEY }}

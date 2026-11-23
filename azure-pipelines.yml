@@ -17,7 +17,7 @@ resources:
   repositories:
     - repository: templates
       type: git
-      name: Main/EvilBaschdi.BuildTemplates
+      name: Main/SWalter.BuildTemplates
       ref: refs/heads/main # optional ref to pin to
 
 extends:
